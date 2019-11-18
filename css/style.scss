@@ -149,6 +149,12 @@
     margin-bottom: 40px;
     text-align: center;
     line-height: 30px;
+
+    &:hover {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      transition-duration: .5s;
+    }
   }
 
   li:first-child {
@@ -327,6 +333,14 @@
 
 .span-row-2 {
   grid-row: span 2 / auto;
+
+  img {
+    &:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
 }
 
 .best_feature_bg {
@@ -349,6 +363,8 @@
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: 1auto;
   grid-template-areas: ". . . .";
+
+
 }
 
 .best_feature_block {
@@ -363,6 +379,14 @@
   justify-content: center;
   align-items: center;
   color: white;
+
+  img {
+    &:hover {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      transition-duration: .2s;
+    }
+  }
 }
 
 .best_feature_block h2 {
@@ -776,6 +800,7 @@
 
   &:hover {
     opacity: 0.7;
+
   }
 }
 
